@@ -1,3 +1,37 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#top {
+  line-height: 4; /*行間隔*/
+}
+
+#company-name {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+#top-btns {
+  display: flex; /*中央へ横並び*/
+  justify-content: space-evenly; /*中央に均等並列*/
+}
+
+.top-btn {
+  list-style: none; /*頭の・を削除*/
+  font-size: 30px;
+  font-weight: 900;
+  background-color: #e0e0e0;
+  padding: 30px 40px;
+  text-decoration: none; /*リンクの下線を削除*/
+  color: #6699ff;
+  font-family: "Font Awesome 5 Free"; 
+  content: "\f105";
+
+}
+
+.top-btn:hover {
+  background-color: #6699ff;
+  color: #fafafa;
+  text-decoration: none;
+}
