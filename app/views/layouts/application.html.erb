@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <% @path.each do |path| %>
+      <% if current_page?(path) %>
+        <% @header = false %>
+      <% end %>
+    <% end %>
+    <% if @header %>
+      <%= render "layouts/header" %>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
