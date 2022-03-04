@@ -3,11 +3,11 @@
     <h2>○○会社</h2>
   </div>
   <div class="col-lg-6"></div>
-  <div class="col-lg-3">
+  <div class="col-lg-6">
     <% if admin_signed_in? %>
       <%= link_to "ログアウト" , destroy_admin_session_path, method: :delete %>
     <% end %>
-    
+
     <%= link_to "メール" %>
   </div>
 </div>
