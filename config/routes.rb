@@ -6,11 +6,15 @@ Rails.application.routes.draw do
     registrations: "admin/registrations",
     sessions: "admin/sessions"
   }
-  
+
   scope module: :admin do
-      resources :admins, only: [:index]
+
+    get 'admin/menu' => 'admins#menu'
+
+    resources :admins, only: [:index]
+
   end
-  
+
   root to: 'homes#top'
 
 end
