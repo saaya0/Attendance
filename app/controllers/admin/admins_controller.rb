@@ -5,5 +5,6 @@ class Admin::AdminsController < ApplicationController
   end
   
   def index
+    @admins = Admin.all
   end
 end
