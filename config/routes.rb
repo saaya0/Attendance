@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get 'admin/menu' => 'admins#menu'
 
     resources :admins, only: [:index]
+    resources :users
 
   end
 
